@@ -47,7 +47,7 @@ http.createServer(function (req, res) {
             })
         
     } else {
-        url = "./resources/public"+url
+        url = "./resources/public"+urllib.parse(url, false).pathname
         // handle directory resolving to .index
         try {
             if (fs.lstatSync(url).isDirectory() ) {
@@ -56,6 +56,7 @@ http.createServer(function (req, res) {
         } catch (error) {}
         
         fs.readFile(url, (err, data) => {
+            
             if (err) {
                 console.log(err)
                 res.writeHead(404, {'Content-Type': 'text/html'})
