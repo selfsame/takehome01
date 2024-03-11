@@ -1,37 +1,22 @@
-# gravie-test
+# Gravie Software Engineer Challenge
 
-FIXME: Write a one-line description of your library/project.
+### Joseph Parker 3/11/2024
 
-## Overview
+For this challenge I've written a SPA clojurescript frontend with a simple node.js server.
 
-FIXME: Write a paragraph about the library/project and highlight its goals.
+To evaluate this application, run `node server.js` and navigate to `http://localhost:8000/`
 
-## Development
+To start in dev mode run both `node server.js` and `lein fig:build`, then navigate to `http://localhost:8000/dev.html`
 
-To get an interactive development environment run:
+## relevant files
+* [server.js](https://github.com/selfsame/takehome01/blob/main/server.js)
+* [core.cljs](https://github.com/selfsame/takehome01/blob/main/src/gravie_test/core.cljs)
 
-    lein fig:build
+## screenshots
 
-This will auto compile and send all changes to the browser without the
-need to reload. After the compilation process is complete, you will
-get a Browser Connected REPL. An easy way to try it is:
+![image](https://gist.github.com/assets/2467644/3fb93289-7690-42e9-8e84-b2a6ffc5e82c)
 
-    (js/alert "Am I connected?")
+![image](https://gist.github.com/assets/2467644/06937e0a-f450-437c-b538-50790a9ab1c8)
 
-and you should see an alert in the browser window.
+![image](https://gist.github.com/assets/2467644/22f3c64c-ba62-40b7-9ffc-f356aae26ba8)
 
-To clean all compiled files:
-
-	lein clean
-
-To create a production build run:
-
-	lein clean
-	lein fig:min
-
-
-## License
-
-Copyright © 2018 FIXME
-
-Distributed under the Eclipse Public License either version 1.0 or (at your option) any later version.
