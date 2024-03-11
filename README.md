@@ -14,9 +14,9 @@ To start in dev mode run both `node server.js` and `lein fig:build`, then naviga
 
 ## screenshots
 
-![image](https://gist.github.com/assets/2467644/3fb93289-7690-42e9-8e84-b2a6ffc5e82c.png)
+<img src="https://gist.github.com/assets/2467644/3fb93289-7690-42e9-8e84-b2a6ffc5e82c.png">
 
-![image](https://gist.github.com/assets/2467644/06937e0a-f450-437c-b538-50790a9ab1c8.png)
+<img src="https://gist.github.com/assets/2467644/06937e0a-f450-437c-b538-50790a9ab1c8.png)">
 
-![image](https://gist.github.com/assets/2467644/22f3c64c-ba62-40b7-9ffc-f356aae26ba8.png)
+<img src="https://gist.github.com/assets/2467644/22f3c64c-ba62-40b7-9ffc-f356aae26ba8.png)">
 
