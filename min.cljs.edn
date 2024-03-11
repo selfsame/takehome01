@@ -1,0 +1,2 @@
+{:main gravie-test.core
+ :output-to "resources/public/min.js"}

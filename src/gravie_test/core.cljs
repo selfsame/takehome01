@@ -121,8 +121,13 @@
         [:p "TOTAL"]
         [:p (str "$" (reduce + (map (comp js/parseFloat price) games)))]]
       [:div.button 
-        {:on-click (fn [e] (swap! state merge {:cart #{} :view :search}))}
+        {:on-click (fn [e] (swap! state merge {:cart #{} :view :complete}))}
         "CHECKOUT"]]))
+
+(defn complete-ui []
+  [:div.section
+    [:h1 "Thank You!"]
+    [:div.button {:on-click (fn [e] (swap! state assoc :view :search))} "back to search"]])
 
 (defn root-ui []
   [:div
@@ -130,6 +135,7 @@
     (case (:view @state)
       :search [search-ui]
       :checkout [checkout-ui]
+      :complete [complete-ui]
       [:p "unknown view: " (:view @state)])])
 
 (rd/render [root-ui] (js/document.querySelector "#app"))
